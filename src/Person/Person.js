@@ -17,7 +17,7 @@ const person = (props) => {
             <p> 
                 My name is {props.name} and i am a {props.sex } ---> {props.children}, Yes i am
                 <span onClick={props.click}>
-                You can also click this text to change the texts above
+                You can also click this text to change the texts above or delete div
                 </span>                
             </p>
 
