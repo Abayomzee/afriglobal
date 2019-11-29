@@ -1,6 +1,6 @@
 import React from 'react';
-import "./Person.css"
-import Radium from 'radium';
+import Person from "./Person.css"
+// import Radium from 'radium';
 
 const person = (props) => {
     const style = {
@@ -12,7 +12,7 @@ const person = (props) => {
     }
 
     return (
-        <div className="Person" style={style}>
+        <div className="Person" style={Person}>
 
             <p> 
                 My name is {props.name} and i am a {props.sex } ---> {props.children}, Yes i am
@@ -30,4 +30,5 @@ const person = (props) => {
     )
 }
 
-export default Radium(person);
+// export default Radium(person);
+export default person;

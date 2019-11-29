@@ -104,13 +104,13 @@ class App extends Component {
         cursor: 'pointer',
         padding: '10px 35px',
         borderRadius: '7px',
-        transition: '.5s',
-        ':hover': {
-          backgroundColor: 'grey'
-        },
-        ':focus': {
-          outline: 'none'
-        }
+        transition: '.5s'
+        // ':hover': {
+        //   backgroundColor: 'grey'
+        // },
+        // ':focus': {
+        //   outline: 'none'
+        // }
       }
     }
 
@@ -159,7 +159,7 @@ class App extends Component {
     }
 
     return (
-      <StyleRoot>
+      // <StyleRoot>
       <div className="App">
   
         <h1> Hi, I am a React App </h1> 
@@ -171,7 +171,7 @@ class App extends Component {
       
         
       </div>
-      </StyleRoot>
+      /* </StyleRoot> */
 
     );
 
@@ -180,4 +180,6 @@ class App extends Component {
   
 }
 
-export default Radium(App);
+// export default Radium(App);
+export default App;
+
