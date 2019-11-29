@@ -1,0 +1,22 @@
+.Person {
+  padding: 40px;
+  border: 2px solid #eeeeee;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 8px 8px rgba(0, 0, 0, 0.05);
+  width: 40%;
+  margin: 40px auto;
+}
+
+.Person p {
+  line-height: 250%;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*# sourceMappingURL=Person.css.map */
