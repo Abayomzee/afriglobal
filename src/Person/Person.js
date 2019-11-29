@@ -1,5 +1,5 @@
 import React from 'react';
-import Person from "./Person.css"
+import classes from "./Person.css"
 // import Radium from 'radium';
 
 const person = (props) => {
@@ -12,7 +12,7 @@ const person = (props) => {
     }
 
     return (
-        <div className="Person" style={Person}>
+        <div className="Person" style={classes.Person}>
 
             <p> 
                 My name is {props.name} and i am a {props.sex } ---> {props.children}, Yes i am

@@ -1,7 +1,7 @@
 // import React from 'react';
 import React, {Component} from 'react';
 import logo from './logo.svg';
-import './App.css';
+import classis from './App.css';
 import Radium, {StyleRoot} from 'radium';
 import './Person/Person.css';
 import Person from './Person/Person';
@@ -149,21 +149,21 @@ class App extends Component {
 
     }
 
-    const classes = [];
+    const assignClass = [];
     if(this.state.persons.length <= 3) {
-      classes.push("yellow");
+      assignClass.push(classis.yellow);
     }
 
     if(this.state.persons.length <= 1) {
-      classes.push("bold");
+      assignClass.push(classis.bold);
     }
 
     return (
       // <StyleRoot>
-      <div className="App">
+      <div className={classis.App}>
   
         <h1> Hi, I am a React App </h1> 
-        <span className={classes.join(' ')}> This is really cool </span>
+        <span className={assignClass.join(' ')}> This is really cool </span>
         <br/><br/><br/>  
         <button onClick={this.showComponentsHandler} style={style.button} key='btnn'> Show Component </button>
         <button onClick={() => this.setNameHandler('Messi')} style={style.button} key='btnnn'> Click to change name </button>
